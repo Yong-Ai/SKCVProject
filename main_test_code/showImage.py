@@ -2,7 +2,7 @@
 import cv2
 
 def showImage():
-    FILENAME = 'resource/test.png'
+    FILENAME = '../resource/test.png'
     # 이미지 파일을 읽기 위한 객체를 리턴  인자(이미지 파일 경로, 읽기 방식)
     # cv2.IMREAD_COLOR : 투명한 부분 무시되는 컬러
     # cv2.IMREAD_GRAYSCALE : 흑백 이미지로 로드
