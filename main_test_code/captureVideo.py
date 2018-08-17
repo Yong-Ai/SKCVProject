@@ -1,12 +1,14 @@
+# reference
+#  https://nrsyed.com/2018/02/12/get-pixel-rgb-value-from-webcam-video-in-opencv-c-and-python/
+
 import cv2
-import numpy as np
 
 if __name__ == '__main__':
 
     cap = cv2.VideoCapture('../resource/test.mp4')
 
-    if (cap.isOpened() == False ):
-        print("error opening the video files")
+    if not cap.isOpened():
+        raise RuntimeError('Error opening VideoCapture.')
 
     while( cap.isOpened() ):
         ret, frame = cap.read()
